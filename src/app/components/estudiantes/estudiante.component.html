@@ -1,0 +1,97 @@
+ <div class="row">
+  <h1> <small>Estudiante</small></h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12 text-right">
+  <button [routerLink]="['/heroes']"
+    class="btn btn-outline-danger"
+    type="button" name="button">
+    Regresar
+  </button>
+</div>
+</div>
+
+<br>
+
+<form (ngSubmit)="guardar()" #forma="ngForm">
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Tipo Documento</label>
+  <div class="col-10">
+    <input [(ngModel="estudiante.tipoDocumento")]
+    name="tipoDocumento"
+    class="form-control"
+    type="text"
+    id="example-text-input" >
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Documento</label>
+  <div class="col-10">
+    <input [(ngModel)]= "estudiante.documento"
+    name="documento"
+    class="form-control" type="text"  id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Nombre</label>
+  <div class="col-10">
+    <input [(ngModel)]="estudiante.nombre"
+    name="nombre"
+    class="form-control" type="text"  id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Sexo</label>
+  <div class="col-10">
+    <input class="form-control" type="text"  id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Dirección</label>
+  <div class="col-10">
+    <input class="form-control" type="text"  id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Teléfono 1</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-tel-input" class="col-2 col-form-label">Teléfono 2</label>
+  <div class="col-10">
+    <input class="form-control" type="tel"  id="example-tel-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-tel-input" class="col-2 col-form-label">Teléfono 3</label>
+  <div class="col-10">
+    <input class="form-control" type="tel"  id="example-tel-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Email</label>
+  <div class="col-10">
+    <input class="form-control" type="email"  id="example-email-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-datetime-local-input" class="col-2 col-form-label">Fecha de Nacimiento</label>
+  <div class="col-10">
+    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+  </div>
+</div>
+
+<br>
+
+<div class="form-group row">
+  <button type="submit" class="btn btn-primary">
+    Guardar Cambios
+  </button>
+</div>
+
+</form>

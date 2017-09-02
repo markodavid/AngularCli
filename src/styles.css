@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  }
+.navbar-toggler { display:block; }
+
+.panel-title{
+  /*background-color: #D8D8D8;*/
+  
+  width:100%;
+  background-color:#46265c;
+  color:#FFFFFF;
+}
+
+.navbar{
+  background-color: #FA5858;
+}
+
+
+  /* You can add global styles to this file, and also import other style files */

@@ -1,0 +1,39 @@
+
+  <div class="col-12 col-md-auto">
+    <div class="panel-title">
+      <h1> <small>Estudiantes</small></h1>
+    </div>
+  </div>
+
+
+  <br>
+<div class="row">
+  <div class="col-md-12 text-right">
+  <button [routerLink]="['/estudiante','nuevo']"
+    class="btn btn-outline-primary"
+    type="button" name="button">
+    Nuevo
+  </button>
+</div>
+</div>
+<br>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Cédula</th>
+      <th>Ver</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Marko</td>
+      <td>94489321</td>
+      <td><button>Editar</button></td>
+    </tr>
+
+  </tbody>
+</table>
