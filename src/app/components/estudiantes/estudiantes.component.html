@@ -1,9 +1,6 @@
-
-  <div class="col-12 col-md-auto">
-    <div class="panel-title">
-      <h1> <small>Estudiantes</small></h1>
-    </div>
-  </div>
+<div class="row">
+ <h1> <small>Estudiantes</small></h1>
+</div>
 
 
   <br>
@@ -19,7 +16,7 @@
 <br>
 
 <table class="table table-striped">
-  <thead>
+  <thead class="thead-inverse">
     <tr>
       <th>#</th>
       <th>Nombre</th>
@@ -28,10 +25,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr *ngFor="let estudiante of estudiantes">
       <th scope="row">1</th>
-      <td>Marko</td>
-      <td>94489321</td>
+      <td>{{estudiante.nombre}}</td>
+      <td>{{estudiante.tipoDocumento}}</td>
       <td><button>Editar</button></td>
     </tr>
 

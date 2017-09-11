@@ -1,4 +1,4 @@
-export interface Estudiante{
+export interface Estudiante {
 tipoDocumento:string;
 documento:string;
 nombre:string;
