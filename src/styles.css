@@ -7,15 +7,36 @@
 
 .panel-title{
   /*background-color: #D8D8D8;*/
-  
+
   width:100%;
-  background-color:#46265c;
+/*  background-color:#46265c;*/
+background-color:#CB0101;
   color:#FFFFFF;
 }
 
 .navbar{
-  background-color: #FA5858;
+  /*background-color: #FA5858;*/
+  background-color: #CB0101;
 }
+
+.nav.navbar-nav li a {
+   color: white ;
+ }
+
+ ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  a {
+color: #536872;
+text-decoration: none;
+background-color: transparent;
+}
+.nav navbar-nav .navbar-right > li > a {
+   color: yellow;
+}
+
 
 
   /* You can add global styles to this file, and also import other style files */

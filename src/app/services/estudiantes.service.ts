@@ -6,8 +6,8 @@ import 'rxjs/Rx';
 @Injectable()
 export class EstudiantesService {
 
-  estudiantesURL:string='https://alianzapopayan.firebaseio.com/Estudiantes.json';
-  estudianteURL:string='https://alianzapopayan.firebaseio.com/Estudiantes/';
+    estudiantesURL:string='https://afpopayan-79b96.firebaseio.com/Estudiantes.json';
+  estudianteURL:string='https://afpopayan-79b96.firebaseio.com/Estudiantes/';
 
 
   constructor(private http:Http) { }
@@ -37,23 +37,21 @@ let url=`${this.estudianteURL}/${key$}.json`;
     console.log(res.json());
     return res.json();
   })
-
-
-
 }
-
+//////////
 getEstudiante(key$:string){
 
   let url = `${this.estudianteURL}/${key$}.json`;
   return this.http.get(url)
   .map(res=>res.json());
 }
-
-getEstudiantes(){
-  return this.http.get(this.estudiantesURL)
+/////////////
+getEstudiantes ( ) {
+  let url =this.estudiantesURL;
+  return this.http.get(url)
   .map(res=>{
-console.log(res.json());
-    res.json()});
+//console.log(res.json());
+    res.json()} );
 
 }
 

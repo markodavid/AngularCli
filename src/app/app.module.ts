@@ -13,16 +13,22 @@ import {EstudiantesService} from './services/estudiantes.service';
 import { AppComponent } from './app.component';
 import { EstudiantesComponent } from './components/estudiantes/estudiantes.component';
 import { EstudianteComponent } from './components/estudiantes/estudiante.component';
+import { CursosComponent } from './components/cursos/cursos.component';
+import { CursoComponent } from './components/cursos/curso.component';
 import { NavbarComponent } from './components/shared/navbar.component';
 import { FooterComponent } from './components/shared/footer.component';
+import { KeysPipe } from './pipes/keys.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     EstudiantesComponent,
     EstudianteComponent,
+    CursoComponent,
+    CursosComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    KeysPipe
   ],
   imports: [
     FormsModule,
@@ -31,7 +37,7 @@ import { FooterComponent } from './components/shared/footer.component';
     APP_ROUTING
   ],
   providers: [
-    EstudiantesService
+  EstudiantesService
   ],
   bootstrap: [AppComponent],
 

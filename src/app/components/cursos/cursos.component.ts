@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import {EstudiantesService} from '../../services/estudiantes.service';
 
 @Component({
-  selector: 'app-estudiantes',
-  templateUrl: './estudiantes.component.html',
-  styleUrls: ['./estudiantes.component.css']
+  selector: 'app-cursos',
+  templateUrl: './cursos.component.html',
+  styleUrls: ['./cursos.component.css']
 })
 
-export class EstudiantesComponent implements OnInit {
+export class CursosComponent implements OnInit {
 
 estudiantes:any;
 

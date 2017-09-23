@@ -5,12 +5,12 @@ import { Estudiante } from '../../interfaces/estudiante.interface';
 import { EstudiantesService } from '../../services/estudiantes.service';
 
 @Component({
-  selector: 'app-estudiante',
-  templateUrl: './estudiante.component.html',
-  styleUrls: ['./estudiante.component.css']
+  selector: 'app-curso',
+  templateUrl: './curso.component.html',
+  styleUrls: ['./curso.component.css']
 })
 
-export class EstudianteComponent implements OnInit {
+export class CursoComponent implements OnInit {
 
   private estudiante:Estudiante = {
     tipoDocumento:"",
